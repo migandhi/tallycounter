@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="addCounterBtn">ADD COUNTER</button>
+
+    <div class="counter-container" id="tallyCounter1">
+        <div class="counter-header">
+            <span class="counter-title">Tally Counter</span>
+            <button class="close-btn" data-target="tallyCounter1">×</button>
+        </div>
+        <div class="counter-display">
+            <input type="text" class="counter-name-display" value="Tally Counter" readonly>
+            <span class="count">0</span>
+        </div>
+        <div class="counter-controls">
+            <button class="control-btn decrement">-</button>
+            <button class="control-btn increment">+</button>
+        </div>
+        <div class="counter-settings">
+            <button class="setting-btn reset-counter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+                  </svg>
+                 RESET COUNTER
+            </button>
+            <div class="setting-input-group">
+                <input type="number" class="start-value-input" placeholder="0">
+                <button class="setting-btn set-start-value">SET START VALUE</button>
+            </div>
+            <div class="setting-input-group">
+                <input type="text" class="counter-name-input" placeholder="Counter Name">
+                <button class="setting-btn set-counter-name">SET COUNTER NAME</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

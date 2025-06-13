@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#addCounterBtn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.counter-container {
+    background-color: #5a5a5a; /* Dark gray background */
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.counter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #777;
+}
+
+.counter-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.close-btn:hover {
+    color: #fff;
+}
+
+.counter-display {
+    background-color: #e0e0e0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #000; /* Black text for display */
+}
+
+.counter-name-display {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #555; /* Slightly lighter text for name in display */
+    padding-right: 10px;
+    outline: none;
+}
+
+.count {
+    font-size: 28px;
+    font-weight: bold;
+    min-width: 40px; /* Ensure space for multi-digit numbers */
+    text-align: right;
+}
+
+.counter-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.control-btn {
+    background-color: #c0c0c0; /* Light gray for +/- buttons */
+    border: 1px solid #999;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 48%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.control-btn:hover {
+    background-color: #b0b0b0;
+}
+.control-btn:active {
+    background-color: #a0a0a0;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.counter-settings button,
+.counter-settings input {
+    display: block;
+    width: calc(100% - 22px); /* Account for padding/border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+}
+
+.setting-btn {
+    background-color: #d0d0d0; /* Slightly darker gray for setting buttons */
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between icon and text */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.setting-btn:hover {
+    background-color: #c0c0c0;
+}
+.setting-btn:active {
+    background-color: #b0b0b0;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.setting-btn svg {
+    vertical-align: middle;
+}
+
+.counter-settings input[type="number"],
+.counter-settings input[type="text"] {
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+    width: 100%;
+}
+
+.setting-input-group {
+    display: flex;
+    flex-direction: column; /* Stack input and button */
+    gap: 5px; /* Small gap between input and its button */
+    margin-bottom: 10px;
+}
+
+.setting-input-group .setting-btn {
+    width: 100%; /* Make button full width within its group */
+    margin-bottom: 0; /* Remove bottom margin if it's the last in group */
+}
